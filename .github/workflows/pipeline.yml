@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '22'
       - run: npm install
-      - run: node pipeline-v5.js
+      - run: node pipeline-v2.js
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
